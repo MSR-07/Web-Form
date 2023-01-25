@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+.container{
+    background-color: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	width: 500px;
+	max-width: 100%;
+    display:block
+}
+h1{
+    font-weight: normal;
+    margin: 20px auto;
+}
+label{
+    display: inline-block;
+    font-weight: 800
+}
+
+input{
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 70%;
+    outline: none !important;
+}
+.valid {
+    border-color: #36cc36;
+}
+.invalid {border-color:orange}
+
+input + p {
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 10px;
+    color: orange;
+    opacity: 0;
+    height: 0;
+}
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
+button {
+	background-color: #777;
+	border: solid #777;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 18px;
+	padding: 2.5px;
+	margin: 10px;
+    width: 25%;
+	
+}
